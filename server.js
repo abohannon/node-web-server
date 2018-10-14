@@ -50,6 +50,12 @@ app.get('/about', (req, res) => {
   })
 })
 
+app.get('/Projects', (req, res) => {
+  res.render('Projects.hbs', {
+    pageTitle: 'Projects Page',
+  })
+})
+
 app.get('/bad', (req, res) => {
   res.send({
     errorMessage: 'Unable to handle request'
